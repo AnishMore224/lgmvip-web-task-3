@@ -5,9 +5,97 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(160, 225, 204);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10%;
+}
+#main{
+  display: flex;
+  flex-direction: row;
+}
+form , #main> div{
+  width:50%;
+}
+form{
+  border-right: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+
+  
+}
+form >div{
+
+  padding:0 10%;
+  margin: 10px 0;
+}
+form>div>label{
+  display: inline-block;
+  width: 40%;
+}
+form>div>input{
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+form>div>div{
+  display: inline-block;
+}
+input[type="checkbox"]{
+  margin-left: 10px;
+}
+input[type="submit"],input[type="reset"]{
+  display: inline-block;
+  width: 40%;
+  margin: 1% auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(160, 225, 204);
+  cursor: pointer;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+  background-color: rgb(53, 87, 76);
+  color: white;
+}
+
+#main >div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+table,tr,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+table{
+  
+  width: 80%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+tr td:first-child{
+  width: 65%;
+}
+thead>tr{
+  background-color: rgb(13, 86, 63);
+  color: white;   
+}
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
